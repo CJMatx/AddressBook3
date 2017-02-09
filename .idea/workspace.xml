@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b63a19dc-d7e3-4ddd-b162-5833e876070c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/AddressBookApplication/ApplicationTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ApplicationTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AddressBookApplication/ApplicationTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
@@ -48,6 +48,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,6 +138,7 @@
         <option value="$PROJECT_DIR$/src/test/java/AddressBookApplication/AddressBookTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddressBookApplication/BuddyInfoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/AddressBookApplication/ApplicationTest.java" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -796,7 +807,7 @@
       <updated>1486650246424</updated>
       <workItem from="1486650248499" duration="820000" />
       <workItem from="1486652367091" duration="87000" />
-      <workItem from="1486652667169" duration="2241000" />
+      <workItem from="1486652667169" duration="2622000" />
     </task>
     <task id="LOCAL-00001" summary="Added test files for AddressBook and BuddyInfo">
       <created>1486653243086</created>
@@ -805,7 +816,14 @@
       <option name="project" value="LOCAL" />
       <updated>1486653243086</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added ApplicationTest">
+      <created>1486654956907</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1486654956907</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -835,7 +853,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3148000" />
+    <option name="totallyTimeSpent" value="3529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -859,7 +877,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4025974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4025974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15245202" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -901,7 +919,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;Second Commit&quot;" />
     <MESSAGE value="Added test files for AddressBook and BuddyInfo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test files for AddressBook and BuddyInfo" />
+    <MESSAGE value="Added ApplicationTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ApplicationTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -993,6 +1012,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
