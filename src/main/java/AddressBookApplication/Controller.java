@@ -31,8 +31,9 @@ public class Controller {
     @PostMapping("/addBuddy")
     public AddressBook addBuddy(@RequestParam(value = "name") String name,
                                 @RequestParam(value = "phone") String phone,
+                                @RequestParam(value = "address") String address,
                                 @RequestParam(value = "bookId") Long bookId) {
-        BuddyInfo buddy = new BuddyInfo(name, phone);
+        BuddyInfo buddy = new BuddyInfo(name, phone, address);
         AddressBook book = this.getBook(bookId);
         book.add(buddy);
         repo.save(book);

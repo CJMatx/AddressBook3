@@ -13,8 +13,8 @@ public class AddressBookTest {
     @org.junit.Before
     public void setUp() throws Exception {
         book = new AddressBook();
-        buddy1 = new BuddyInfo("Connor", "111-111-1111");
-        buddy2 = new BuddyInfo("Charles", "222-222-2222");
+        buddy1 = new BuddyInfo("Connor", "111-111-1111", "123 road");
+        buddy2 = new BuddyInfo("Charles", "222-222-2222", "abc street");
     }
 
     @org.junit.Test

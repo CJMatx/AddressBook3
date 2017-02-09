@@ -21,14 +21,18 @@ public class BuddyInfo {
 
     private String phone;
 
+    private String address;
+
     public BuddyInfo() {
         this.name = "default name";
         this.phone = "XXX-XXX-XXXX";
+        this.address = "default address";
     }
 
-    public BuddyInfo(String name, String phone) {
+    public BuddyInfo(String name, String phone, String address) {
         this.name = name;
         this.phone = phone;
+        this.address = address;
     }
 
     public String getName() {
@@ -47,6 +51,14 @@ public class BuddyInfo {
         this.phone = phone;
     }
 
+    public String getAddress() {
+        return this.address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public long getId() {
         return this.id;
     }
@@ -59,7 +71,7 @@ public class BuddyInfo {
 
         BuddyInfo buddy = (BuddyInfo) obj;
 
-        if(this.name.equals(buddy.getName()) && this.phone.equals(buddy.getPhone())) {
+        if(this.id == buddy.getId()) {
             return true;
         }
         return false;
@@ -67,6 +79,6 @@ public class BuddyInfo {
 
     @Override
     public String toString() {
-        return this.name + ": " + this.phone;
+        return this.name + ", " + this.phone + ", " + this.address;
     }
 }

@@ -86,8 +86,8 @@ public class AddressBook {
 
     public static void main(String [ ] args) {
         AddressBook book = new AddressBook();
-        BuddyInfo buddy1 = new BuddyInfo("Connor", "111-111-1111");
-        BuddyInfo buddy2 = new BuddyInfo("Charles", "222-222-2222");
+        BuddyInfo buddy1 = new BuddyInfo("Connor", "111-111-1111", "123 road");
+        BuddyInfo buddy2 = new BuddyInfo("Charles", "222-222-2222", "abc street");
 
         book.add(buddy1);
         book.add(buddy2);

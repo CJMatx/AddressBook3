@@ -14,8 +14,8 @@ public class BuddyInfoTest {
 
     @Before
     public void setUp() throws Exception {
-        buddy1 = new BuddyInfo("Connor", "111-111-1111");
-        buddy2 = new BuddyInfo("Connor", "111-111-1111");
+        buddy1 = new BuddyInfo("Connor", "111-111-1111", "123 road");
+        buddy2 = new BuddyInfo("Connor", "111-111-1111", "123 road");
     }
 
     @Test
@@ -38,6 +38,17 @@ public class BuddyInfoTest {
     public void setPhone() throws Exception {
         buddy1.setPhone("222-222-2222");
         assertTrue(buddy1.getPhone().equals("222-222-2222"));
+    }
+
+    @Test
+    public void getAddress() throws Exception {
+        assertTrue(buddy1.getAddress().equals("123 road"));
+    }
+
+    @Test
+    public void setAddress() throws Exception {
+        buddy1.setAddress("abc road");
+        assertTrue(buddy1.getAddress().equals("abc road"));
     }
 
     @Test

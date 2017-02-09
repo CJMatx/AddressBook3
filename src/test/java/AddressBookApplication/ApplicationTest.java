@@ -37,10 +37,11 @@ public class ApplicationTest {
     @Test
     public void addBuddyTest() throws Exception {
         this.mockMvc.perform(post("/createBook?name=Book2"));
-        this.mockMvc.perform(post("/addBuddy?name=Connor&phone=111-111-1111&bookId=1"));
+        this.mockMvc.perform(post("/addBuddy?name=Connor&phone=111-111-1111&address=123 road&bookId=1"));
         this.mockMvc.perform(get("/getBook?id=1")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString("\"name\":\"Book2\"")))
                 .andExpect(content().string(containsString("\"name\":\"Connor\"")))
-                .andExpect(content().string(containsString("\"phone\":\"111-111-1111\"")));
+                .andExpect(content().string(containsString("\"phone\":\"111-111-1111\"")))
+                .andExpect(content().string(containsString("\"address\":\"123 road\"")));
     }
 }
