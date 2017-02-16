@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Address Book Manager</title>
+</head>
+<body>
+    <h1>List of books</h1>
+    <form action="#" th:action="@{/viewBook}" method="get">
+        <p th:each="book : ${books}">
+            <span th:text="${book.name}"></span>
+            <button type="submit" name="bookId" th:value="${book.id}">Select</button>
+        </p>
+    </form>
+        <!--button th:each="book : ${books}" th:text="${book.name}" type="submit" th:value="${book.id}"></button-->
+    <form action="#" th:action="@{/newBook}" method="get">
+        <button type="submit">Create New</button>
+    </form>
+</body>
+</html>

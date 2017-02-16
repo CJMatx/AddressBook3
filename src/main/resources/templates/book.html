@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Address Book Manager</title>
+</head>
+<body>
+    <h1 th:text="${book.name}"></h1>
+    <p th:each="buddy : ${book.buddyList}">
+        Name: <b><span th:text="${buddy.name}"></span></b><br/>
+        Phone: <b><span th:text="${buddy.phone}"></span></b><br/>
+        Address: <b><span th:text="${buddy.address}"></span></b><br/>
+    </p>
+    <form action="#" th:action="@{/newBuddy}" method="get">
+        <button type="submit" name="bookId" th:value="${book.id}">New Buddy</button>
+    </form>
+    <form action="#" th:action="@{/}" method="get">
+        <input type="submit" value="Book List"/>
+    </form>
+</body>
+</html>
